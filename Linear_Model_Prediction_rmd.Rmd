@@ -110,6 +110,9 @@ The adjusted arm squared form SIMS vs ARM is bigger than SIMS vs GRIP
 basiccNN2 +geom_point() +ggtitle("SIMS VS GRIP") +geom_smooth(method=lm)
 ```
 
+
+### Model3 SIMS~ARM+GRIP
+
 ```{r}
 gripmod<- lm(SIMS~GRIP,data=data)
 plot(SIMS~GRIP,data=data)

@@ -103,7 +103,12 @@ model2<-lm(SIMS~GRIP,data=data)
 summary.lm(model2)
 ```
 
+
 The adjusted arm squared form SIMS vs ARM is bigger than SIMS vs GRIP
+
+```{r}
+basiccNN2 +geom_point() +ggtitle("SIMS VS GRIP") +geom_smooth(method=lm)
+```
 
 ```{r}
 gripmod<- lm(SIMS~GRIP,data=data)
